@@ -1,0 +1,45 @@
+body{
+    background-color: rgb(19, 15, 42);
+}
+h1{
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 200;
+    font-size: 2.8rem;
+    letter-spacing: 3px;
+    margin-top: 50px;
+    text-align: center;
+}
+#alarmBox{
+    height: 60vh;
+    margin: 40px;
+    
+}
+
+#empty{
+    /* position: absolute; */
+    /* left: 47%; */
+    /* top: 40%; */
+    /* box-sizing: content-box; */
+    text-align: center;
+    padding-top: 20%;
+}
+#empty > p{
+    color: grey;
+    font-size: 1.25rem;
+    padding-left: 10px;
+}
+
+#addalarm{
+    color: rgb(19, 15, 42);
+    cursor: pointer;
+    font-size: 2.8rem;
+    box-sizing: border-box;
+    padding-top: 30px;
+    background-color: dodgerblue;
+    height: 120px;
+    width: 120px;
+    text-align: center;
+    border-radius: 50%;
+    margin:10px auto;
+}
