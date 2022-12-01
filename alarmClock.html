@@ -8,13 +8,30 @@
 </head>
 <body>
 
-<h1>Alarm</h1>
+<h1 class="text-center">Alarm</h1>
 <div id = "alarmBox">
 	<div id="empty"><img src="/Images/icons8-alarm-off-96 copy.png"><p>No Alarm</p></div>
 </div>
 <div id="addalarm">+</div>
 
-
+<div id="setTime">
+	<h2 class="text-center">Select time</h2>
+	<div id="timeValue">
+		<input type="number" id="hour" min="0" max="23">
+		<span>:</span>
+		<input type="number" id="minute" min="0" max="59">
+		<select>
+			<option value="AM">AM</option>
+			<option value="PM">PM</option>
+		</select>
+	</div>
+	<div id="btn">
+		<button id="setAlarm">OK</button>
+		<button id="cancel">Cancel</button>
+	</div>
+	
+	
+</div>
 
 
 
