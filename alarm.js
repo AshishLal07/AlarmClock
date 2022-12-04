@@ -23,7 +23,6 @@ const checkAlarm = (time)=>{
         })
         if(alarmring.length > 0){
             document.getElementById('alarm-ring').style.display ='block';
-            // document.getElementById('ringtime').innerHTML = alarmring[0].alarmString;
             var content = alarmring[0].alarmString
             document.getElementById('ringTime').innerHTML = content + "";
             set = setInterval( ()=>{
@@ -154,7 +153,6 @@ function handleEvent(event){
     
     if(target.classList.contains('time')){
         target.classList.toggle('Setting');
-        // console.log(target.parentElement);
         target.parentElement.classList.toggle('height');
     }else if(target.classList.contains('toggle')){
         
