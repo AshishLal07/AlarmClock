@@ -8,19 +8,35 @@
 </head>
 <body>
 
+<div id="current-time"></div>
 <h1 class="text-center">Alarm</h1>
-<div id = "alarmBox">
+<ul id = "alarmBox">
+	<!-- <li class="alarm bcg-overlay"> -->
+		<!-- <div id="time" class=" fn-md">17:30 <span>PM</span></div> -->
+		<!-- <div  class="day-alarm fn-s"><span id="days">Not scheduled</span>  <div class="toggle"> <div class="ball circle"></div></div></div> -->
+		<!-- <div class="days">  -->
+			<!-- <div class="day circle">S</div> -->
+			<!-- <div class="day circle">M</div> -->
+			<!-- <div class="day circle">T</div> -->
+			<!-- <div class="day circle">W</div> -->
+			<!-- <div class="day circle">T</div> -->
+			<!-- <div class="day circle">F</div> -->
+			<!-- <div class="day circle">S</div> -->
+		<!-- </div> -->
+		<!-- <div class="silent"><span class="fn-s">Silent</span></div> -->
+		<!-- <div class="delete"><span class="fn-s">Delete</span></div> -->
+	<!-- </li> -->
 	<div id="empty"><img src="/Images/icons8-alarm-off-96 copy.png"><p>No Alarm</p></div>
-</div>
+</ul>
 <div id="addalarm">+</div>
 
 <div id="setTime">
 	<h2 class="text-center">Select time</h2>
 	<div id="timeValue">
-		<input type="number" id="hour" min="0" max="23">
+		<input type="number" id="hour" maxlength="2" min="0" max="23">
 		<span>:</span>
-		<input type="number" id="minute" min="0" max="59">
-		<select>
+		<input type="number" id="minute" maxlength="2" min="0" max="59">
+		<select id="meridiem">
 			<option value="AM">AM</option>
 			<option value="PM">PM</option>
 		</select>
@@ -29,8 +45,28 @@
 		<button id="setAlarm">OK</button>
 		<button id="cancel">Cancel</button>
 	</div>
+		
+	</div>
+
+	<div id="alarmSound">
+		<h1 class="text-center">Alarm sound</h1>
+		<div id="soundBox" class="bcg-overlay">
+			<div id="addaudio"> <img class="circle" src="/Images/plus-solid.svg" width="32px" height="32px" alt=""><span>Add new</span></div>
+			<p>Device Sounds</p>
+			<ul id="soundList">
+				<li><audio id="Beep" src="/audio/alarm-clock-short-6402.mp3"></audio><a href="#">Beep</a></li>
+			</ul>
+		</div>
 	
-	
+</div>
+
+<div id="alarm-ring" class="bcg-overlay">
+	<div id="ringTime" class="fn-md"> <span id="zone" class="fn-s"></span></div>
+	<audio id="alarm-audio" src="/audio/alarm-clock-short-6402.mp3"></audio>
+	<div id="alarm-custom">
+		<button id="extra">Snooze</button>
+		<button id="stop">Stop</button>
+	</div>
 </div>
 
 
