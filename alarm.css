@@ -224,7 +224,7 @@ select{
 }
 
 #soundList li::before{
-    content: url('/Images/bell-solid.svg');
+    content: url('Images/bell-solid.svg');
     display:inline-block;
     width: 32px;
     height: 32px;
@@ -254,7 +254,7 @@ select{
     overflow: hidden;
 }
 .time::after{
-    content: url(/Images/angle-up-solid.svg);
+    content: url(Images/angle-up-solid.svg);
     display: inline-block;
     width: 32px;
     height: 32px;
@@ -311,7 +311,7 @@ select{
 }
 
 .silent::before{
-    content: url(/Images/bell-solid.svg);
+    content: url(Images/bell-solid.svg);
     display: inline-block;
     height: 32px;
     width: 32px;
@@ -328,7 +328,7 @@ select{
 
 
 .delete::before{
-    content: url(/Images/trash-can-solid.svg);
+    content: url(Images/trash-can-solid.svg);
     display: inline-block;
     height: 32px;
     width: 32px;
@@ -383,7 +383,7 @@ select{
     font-size: 3rem;
 }
 #ringTime::before{
-    content: url(/Images/clock-solid.svg);
+    content: url(Images/clock-solid.svg);
     display: inline-block;
     height: 32px;
     width: 32px;
